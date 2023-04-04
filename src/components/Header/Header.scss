@@ -1,0 +1,30 @@
+
+header {
+    
+    .container {
+        height: 4rem ;
+        padding: 8px;
+        display: flex;
+        width: 60%;
+        margin: auto;
+        align-items: baseline;
+        justify-content: space-between;
+        position: absolute;
+        top:0;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        & nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            gap: 1rem;
+            
+            & li{
+                cursor: pointer;
+                font-weight: 600;
+            }
+        }
+    }
+}

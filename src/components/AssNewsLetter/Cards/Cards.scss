@@ -1,0 +1,31 @@
+@use '../../../variables';
+
+.card {
+    display: flex;
+    width: 380px;
+    align-items: center;
+    
+    & img {
+        width: 50%;
+    }
+    & > div {
+        text-align: left;
+
+        & h4 {
+            font-family: variables.$font-family-title;
+            font-weight: 900;
+            font-size: 2rem;
+        }
+        & p {
+            font-size: 16px;
+
+            &:nth-child(2) {
+                margin: 0.5rem 0;
+            }
+        }
+        & p:nth-child(3) {
+            color: variables.$primary-color;
+            cursor: pointer;
+        }
+    }
+}

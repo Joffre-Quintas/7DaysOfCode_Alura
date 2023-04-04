@@ -1,0 +1,115 @@
+@use '../../variables';
+
+.container-newsletter{
+    width: 60%;
+    margin: auto;
+    height: 100%;
+    font-size: 22px;
+
+    &_assBox {
+        margin-top: 12rem;
+        width: 55%;
+        
+        &_text{
+            width: 80%;
+            & h1 {
+                font-family: variables.$font-family-title;
+                font-size: 82px;
+                margin: 12px 0px 24px 0px;
+            }
+            & p:nth-child(3){
+                font-size: 1rem;
+            }
+        }
+        &_input {
+            position: relative;
+            height: 75px;
+            margin-top: 2.5rem;
+
+            & div{
+                position: absolute;
+                top: 50%;
+                left: 1rem;
+                transform: translateY(-50%);
+            }
+            & input {
+                height: 100%;
+                padding: 0 3rem;
+                width: 70%;
+                border: none;
+                box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+            }
+            & button{
+                width: 30%;
+                height: 100%;
+                border: none;
+                background-color: variables.$primary-color;
+                font-family: variables.$font-family-default;
+                color: #fff;
+                box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+            }
+        }
+    }
+    & .imgTree{
+        position: absolute;
+        top: 3rem;
+        right: 20%;
+        z-index: -1;
+    }
+    & .bgNewsletter{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        size: 90%;
+    }
+    &_card{
+        width: 1000px;
+        display: flex;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+        // background-color: red;
+        margin: 23rem auto 2.75rem;
+        background-color: #fff;
+        
+        & > div {
+            padding: 2rem;
+
+            & > p{
+                font-size: 22px;
+                margin-top: 2rem;
+            }
+            & h3{
+                font-size: 42px;
+                font-family: variables.$font-family-title;
+                margin-top:0.75rem;
+            }
+            & ul{
+                list-style: none;
+
+                & li {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 2rem;
+                    gap: 1rem;
+                }
+            }
+        } 
+    }
+    & section{
+        text-align: center;
+    
+        & > p{
+            font-size: 22px;
+        }
+        & > h2{
+            font-family: variables.$font-family-title;
+            font-size: 82px;
+            margin-bottom: 0.25rem;
+        }
+        & .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    
+}
